@@ -64,11 +64,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        The new wallet currently has {balance} XRP <br />
+        現在は口座残高は {balance} XRP です<br />
         <br />
-
-        <button onClick={sendPayment}>{paymentButtonText}</button>
-        <p>Watch the console to see the payment flow in action!</p>
+        <button className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold py-2 px-5 rounded" onClick={sendPayment}>{paymentButtonText}</button>
+        <br />
+        <p>支払いの状況を確認するにはコンソールをご確認ください!</p>
         <p>
           <i>{statusText}</i>
         </p>
